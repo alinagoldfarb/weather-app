@@ -16,7 +16,7 @@ body {
   
   .weather-app {
     min-height: 100vh;
-    background-image: url(src/img/raining.jpg);
+    background-image: url(./img/raining.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
