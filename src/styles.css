@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background: #111;
+    color: white;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  h1,
+  h3 {
+    font-weight: 400;
+  }
+  
+  .weather-app {
+    min-height: 100vh;
+    background-image: url(src/img/raining.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: 500ms;
+    opacity: 1;
+  }
+  
+  .weather-app::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+  }
+  
+  .container {
+    position: absolute;
+    top: 0.5em;
+    left: 1.5em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2em 3em 4em 3em;
+  }
+  
+  .container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .city-time,
+  #temperature,
+  .weather {
+    margin: 0 1em;
+  }
+  
+  .city-time h1 {
+    margin: 0;
+    margin-bottom: 0.2em;
+    font-size: 3em;
+  }
+  
+  #temperature,
+  #celsium {
+    font-size: 7em;
+    margin: 0;
+  }
+  
+  .weather img {
+    display: block;
+    margin: 0.5em 0;
+  }
+  
+  .weather-forecast {
+    padding-left: 0.5em;
+    padding-right: 3.5em;
+    text-align: center;
+  }
+  
+  .weather-forecast h3 {
+    font-weight: 200;
+    font-size: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+  
+  .panel {
+    position: absolute;
+    width: 65%;
+    height: 80%;
+    top: 10%;
+    left: 18%;
+    right: 20%;
+    background: rgba(110, 110, 110, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: 1;
+    padding: 3em 2em;
+  }
+  
+  .panel form {
+    margin-bottom: 3em;
+  }
+  
+  .submit {
+    position: absolute;
+    top: 3%;
+    right: 7%;
+    padding: 1.5em;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: 0.4s;
+  }
+  
+  .submit:hover {
+    background: none;
+    color: #000;
+  }
+  
+  .search {
+    position: absolute;
+    background: none;
+    border: none;
+    border-bottom: 1px #ccc solid;
+    padding: 0 1em 0.5em 0;
+    width: 30%;
+    color: #fff;
+    font-size: 1.1em;
+    right: 10%;
+    top: 8%;
+  }
+  
+  .search:focus {
+    outline: none;
+  }
+  
+  .search::placeholder {
+    color: #e3e3e3;
+  }
+  
+  .panel ul {
+    margin-left: 2em;
+    margin-top: 2em;
+    border-left: 1px #ccc solid;
+  }
+  
+  .brand {
+    margin-top: 0.5em;
+  }
+  
+  .details {
+    font-weight: 200;
+    font-size: 14px;
+    margin-top: -3em;
+  }
+  
+  .details-parameter {
+    padding-right: 5em;
+  }
+  
+  .main-section {
+    margin-bottom: 5%;
+  }
+  
+  #city {
+    font-size: 42px;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    margin: auto 0;
+  }
+  

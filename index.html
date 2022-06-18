@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App | Alina Goldfarb</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/998cd7d1dc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div class="weather-app">
+      <div class="panel">
+        <div class="container">
+          <h3 class="brand">WeatherApp</h3>
+          <form id="search-form">
+            <input
+              type="text"
+              class="search"
+              placeholder="Enter city name..."
+              id="searchInput"
+            />
+            <button type="submit" class="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+
+          <div class="main-section">
+            <h1 id="temperature">24</h1><p id="celsium">&#176</p>
+            <div class="city-time">
+              <h1 class="name" id="city">Los Angeles</h1>
+              <small>
+                <span id="date">Tuesday 16:00</span>
+              </small>
+            </div>
+            <div class="weather">
+              <img
+                src="src/img/raining-icon.svg"
+                class="icon"
+                alt="icon"
+                width="50"
+                height="50"
+              />
+              <span id="description">Light Rain</span>
+            </div>
+            <ul class="details">
+              <div class="details-parameter">
+                <span>Humidity:</span>
+                <span id="humidity">22</span>%
+              </div>
+              <div class="details-parameter">
+                <span>Wind:</span>
+                <span id="wind">14</span>km/h
+              </div>
+            </ul>
+          </div>
+
+          <div class="weather-forecast-group">
+            <span class="weather-forecast">
+              <h3>Wed</h3>
+              <img
+                src="src/img/raining-icon.svg"
+                class="icon"
+                alt="icon"
+                width="50"
+                height="50"
+              />
+              <h3>22&#176;</h3>
+            </span>
+
+            <span class="weather-forecast">
+              <h3>Thu</h3>
+              <img
+                src="src/img/sunny-icon.svg"
+                class="icon"
+                alt="icon"
+                width="50"
+                height="50"
+              />
+              <h3>24&#176;</h3>
+            </span>
+
+            <span class="weather-forecast">
+              <h3>Fri</h3>
+              <img
+                src="src/img/raining-icon.svg"
+                class="icon"
+                alt="icon"
+                width="50"
+                height="50"
+              />
+              <h3>19&#176;</h3>
+            </span>
+
+            <span class="weather-forecast">
+              <h3>Sat</h3>
+              <img
+                src="src/img/cloudy-icon.svg"
+                class="icon"
+                alt="icon"
+                width="50"
+                height="50"
+              />
+              <h3>13&#176;</h3>
+            </span>
+
+            <span class="weather-forecast">
+              <h3>Sun</h3>
+              <img
+                src="src/img/cloudy-icon.svg"
+                class="icon"
+                alt="icon"
+                width="50"
+                height="50"
+              />
+              <h3>18&#176;</h3>
+            </span>
+
+            <span class="weather-forecast">
+              <h3>Mon</h3>
+              <img
+                src="src/img/sunny-icon.svg"
+                class="icon"
+                alt="icon"
+                width="50"
+                height="50"
+              />
+              <h3>21&#176;</h3>
+            </span>
+
+            <span class="weather-forecast">
+              <h3>Tue</h3>
+              <img
+                src="src/img/sunny-icon.svg"
+                class="icon"
+                alt="icon"
+                width="50"
+                height="50"
+              />
+              <h3>25&#176;</h3>
+            </span>
+          </div>
+        </div>
+      </div>
+      <p class="footer">Coded by Alina Goldfarb</p>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
