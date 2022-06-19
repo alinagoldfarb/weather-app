@@ -62,12 +62,13 @@ function formatDate(date) {
   form.addEventListener("submit", search);
   
 
-
+function backgroundChange() {
 let weatherDescription = document.querySelector("#description");
 if (weatherDescription = "Light Rain") {
   document.body.style.background = "url('img/raining.jpg')";
-} else if (weatherDescription = "Cloudy") {
+} else if (weatherDescription = "Clouds") {
   document.body.style.background = "url('img/cloudy.jpg')";
 } else if (weatherDescription = "Clear") {
   document.body.style.background = "url('img/sunny.jpg')";
+}
 }
