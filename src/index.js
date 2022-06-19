@@ -65,10 +65,10 @@ function formatDate(date) {
 function backgroundChange() {
 let weatherDescription = document.querySelector("#description");
 if (weatherDescription = "Light Rain") {
-  document.getElementById("#weather-app-background").style.background = "url('img/raining.jpg')";
+  document.getElementById("#weather-app-background").style.background = "url(/img/raining.jpg)";
 } else if (weatherDescription = "Clouds") {
-  document.getElementById("#weather-app-background").style.background = "url('img/cloudy.jpg')";
+  document.getElementById("#weather-app-background").style.background = "url(/img/raining.jpg)";
 } else if (weatherDescription = "Clear") {
-  document.getElementById("#weather-app-background").style.background = "url('img/sunny.jpg')";
+  document.getElementById("#weather-app-background").style.background = "url(/img/raining.jpg)";
 }
 }
